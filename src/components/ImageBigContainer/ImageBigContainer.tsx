@@ -7,6 +7,7 @@ interface ImageBigContainerProps {
 }
 
 const ImageBigContainer = ({source}: ImageBigContainerProps) => {
+  console.log(source);
   return (
     <View style={styles.container}>
       <Image

@@ -52,7 +52,10 @@ const DetailModal = ({
         ]}>
         <View style={styles.modalTopContainer}>
           <Text style={styles.headerText}>{product.name}</Text>
-          <Text style={styles.headerText}>{`$${product.price}`}</Text>
+          <Text
+            style={
+              styles.headerText
+            }>{`$${product.price.toLocaleString()}`}</Text>
           <TouchableOpacity style={styles.iconContainer} onPress={onPressBack}>
             <Icon name={'Back'} scale={7} />
           </TouchableOpacity>

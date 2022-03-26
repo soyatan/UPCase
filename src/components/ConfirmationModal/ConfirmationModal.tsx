@@ -10,15 +10,10 @@ import {useNavigation} from '@react-navigation/native';
 
 interface ConfirmationModalProps {
   id: string;
-  showModal: Boolean;
   setShowModal: any;
 }
 
-const ConfirmationModal = ({
-  id,
-  showModal,
-  setShowModal,
-}: ConfirmationModalProps) => {
+const ConfirmationModal = ({id, setShowModal}: ConfirmationModalProps) => {
   const navigation = useNavigation<Nav>();
 
   const deleteProductFromDatabase = async () => {

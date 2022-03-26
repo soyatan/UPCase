@@ -52,7 +52,6 @@ const DetailScreen = ({route, navigation}: DetailScreenProps) => {
           <ConfirmationModal
             id={product.id}
             setShowModal={setShowDeleteConfirmation}
-            showModal={showDeleteConfirmation}
           />
         ) : null}
       </View>

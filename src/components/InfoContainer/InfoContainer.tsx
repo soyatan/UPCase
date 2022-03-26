@@ -18,7 +18,7 @@ const InfoContainer = ({name, price}: InfoContainerProps) => {
       </View>
       <View style={styles.bottomRow}>
         <Text numberOfLines={1} style={styles.textDescription}>
-          {`$${price}`}
+          {`$${price.toLocaleString()}`}
         </Text>
         <View style={styles.iconContainer}>
           <Icon name={'Info'} scale={4} />
